@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,300&family=Montserrat:wght@400;500&family=Vina+Sans&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+:root {
+    --lime: #D3FF56;
+    --blue: #071EFF;
+    --pink: #F9B5EB;
+    --purple: #CEB3FF;
+    --green: #96DD9A;
+}
+
+h1 {
+    font-family: 'Vina Sans', cursive;
+    text-decoration: line-through;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    color: var(--lime)
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h3:hover {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-top: 3rem;
+}
+
+h5 {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+button {
+    background-color: var(--lime);
+    color: var(--blue);
+    border: 4px solid var(--blue);
+    border-radius: 3rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+main .main-1 div:nth-child(2) p, main .main-2 p {
+    font-size: 4rem;
+    line-height: 8rem;
+    color: var(--blue);
+    text-align: center;
+}
+
+main .main-1 i {
+    font-size: 8rem;
+}
+
+main .main-2 i {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem;
+}
+
+main .main-4 p {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+main .main-4 p.stars {
+    font-size: 8rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+main .main-4-bottom p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+main .main-4-bottom p:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+
+footer div p {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+}
+
+body {
+    background-color: var(--purple);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .top {
+    background-color: var(--blue);
+    text-align: center;
+    padding: 0.8rem;
+}
+
+nav .bottom {
+    background-color: var(--lime);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 4px solid var(--blue);
+    padding: 0.5rem 2rem;
+    color: var(--blue);
+}
+
+nav .bottom div {
+    width: 33%;
+}
+
+nav .bottom div:nth-child(3) {
+    text-align: right;
+}
+
+div.parallax {
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height: 100vh;
+	max-width: 100%;
+	position: relative;
+    background-color: var(--pink); 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--purple);
+    border-top: 4px solid var(--blue);
+}
+
+main .main-1 {
+    background-color: var(--purple);
+    display: flex;
+    column-gap: 4rem;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+main .main-1 div:nth-child(1) {
+    background-color: var(--green);
+    flex-grow: 1;
+}
+
+main .main-1 div:nth-child(2) {
+    flex-grow: 2;
+}
+
+main .main-2 {
+    border-top: 4px solid var(--blue);
+    border-bottom: 4px solid var(--blue);
+}
+
+main .main-3 {
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+    text-align: center;
+}
+
+main .main-3 .borders {
+    border-left: 4px solid var(--blue);
+    border-right: 4px solid var(--blue);
+}
+
+.img_wrap {
+  width: 33%;
+  position: relative;
+  padding: 5rem 0;
+}
+
+.img_wrap img {
+    width: 50%;
+}
+
+.img_description {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+main .main-4 {
+    color: var(--blue);
+    border-top: 4px solid var(--blue);
+    border-bottom: 4px solid var(--blue);
+    overflow: hidden;
+}
+
+main .main-4-top {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+    padding-top: 4rem;
+}
+
+main .main-4-bottom {
+    display: flex;
+    column-gap: 12rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 3rem 7rem 5rem 7rem;
+}
+
+main .main-5 {
+    display: flex;
+    background-color: var(--lime);
+    color: var(--blue);
+    border-bottom: 4px solid var(--blue);
+    font-size: 2rem;
+}
+
+div.parallax.img-dos {
+    height: 50vh;
+}
+
+footer {
+    background-color: var(--blue);
+    color: var(--lime);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5rem;
+    margin-bottom: 2rem;
+    padding: 5rem 4rem 6rem 4rem;
+}
+
+
