@@ -25,7 +25,6 @@
 * {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 :root {
@@ -190,6 +189,9 @@ nav .top {
   background-color: var(--blue);
   text-align: center;
   padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav .bottom {
@@ -309,7 +311,10 @@ main .main-3 .borders {
 
 .img-uno {
   background-image: url("../img/trombone1.png");
-  height: 90%;
+}
+
+.img-dos {
+  background-image: url("../img/trombone1rev.png");
 }
 
 main .main-4 {
@@ -346,13 +351,29 @@ main .main-5 {
 }
 
 div.parallax.img-uno {
-  background-size: 50%;
-  background-position: right 50px;
+  background-size: 40%;
+  background-position: right 10vh;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  font-size: 10rem;
 }
 
 div.parallax.img-dos {
+  background-size: 40%;
+  background-position: center 25vh;
+  background-repeat: no-repeat;
   height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div .prova {
+  width: 25%;
+  height: 50vh;
+  border-right: 4px solid var(--blue);
 }
 
 footer {
@@ -402,6 +423,7 @@ footer .footer-col div:nth-child(2) {
   height: 175px;
   background-color: none;
   z-index: 1;
+  overflow: hidden;
 }
 
 .starburst svg {
@@ -429,5 +451,11 @@ div.starburst p.starburst-text {
 .stars span {
   display: inline-block;
   animation: rotate-360 3s infinite;
+  transform-origin: center;
   overflow: hidden;
+}
+
+div.stars-div {
+  overflow: hidden;
+  max-height: 250px;
 }
